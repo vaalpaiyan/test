@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+.mv_loader,
+.mv_loader:before,
+.mv_loader:after {
+  background: #ffffff;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+.mv_loader {
+  color: #ffffff;
+  text-indent: -9999em;
+  margin: 88px auto;
+  position: absolute;
+  left: 63px;
+  top: -42px;
+  font-size: 7px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.mv_loader:before,
+.mv_loader:after {
+  position: absolute;
+  top: 0;
+  content: '';
+}
+.mv_loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.mv_loader:after {
+  left: 1.5em;
+}
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 3em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 4em;
+  }
+}
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 3em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 4em;
+  }
+}
+.test{
+width:150px;
+height:150px;
+position:relative;
+background:#000;
+}
+</style>
+</head>
+<body style="background:#fff;">
+
+<h1>Loader MVP</h1>
+<div class="test">
+<div class="mv_loader"></div>
+</div>
+</body>
+</html>
